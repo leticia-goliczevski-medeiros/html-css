@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style> 
+        *{ /*Configurações globais das CSS*/
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to right,#4FB0EB, #CD15EA,#EB0E71, #EB7437, #EBE300 20%);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+    <!--
+        No gradiente linear (linear-gradient) colocar (a direção,cor 1, cor2,.. etc)
+    Porém, na opção to top ou to bottom ele aparece zebrado pois o tamanh está pequeno. Para consertar é preciso fazer uma configuração global de css antes do seletor body. 
+    -->
+</body>
+</html>

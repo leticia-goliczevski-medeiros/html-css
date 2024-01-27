@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h2 {
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        header {
+            text-align: center;
+            background-color: rgb(255, 243, 246);
+            color: rgb(49, 49, 196);
+        }
+        nav {
+            background-color: rgb(255, 198, 198);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            padding: 8px;
+            margin: 10px;
+            box-shadow: 5px 5px 5px rgb(240, 141, 255); 
+        }
+        nav > a {
+            margin: 20px;
+            text-decoration: none;
+        }
+        nav>a:hover {
+            color: cornflowerblue;
+        }
+        main {
+            background-color: rgb(255, 223, 228);
+            padding: 10px;
+            margin: 10px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 70px;
+            border-bottom-right-radius: 70px;
+            border-bottom-left-radius: 0px;
+        }
+        footer {
+            background-color: rgb(210, 230, 247);
+            text-align: center;
+            padding: 5px;
+            margin: 4px auto;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: cornflowerblue;
+            margin: auto;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tags de agrupamento semânticas</h1>
+    <!--header, main e foot são divs mas tem um significado e isso ajuda os mecanismos de buscas-->
+    <header>
+        <h1>Aprendendo uma língua estrangeira</h1>
+        <nav>
+            <a href="">Recursos online</a>
+            <a href="">Dicas</a>
+            <a href="">Recomendações</a>
+            <a href="">Material</a>
+            <a href="">Leituras extras</a>
+        </nav>
+    </header>
+    <main>
+        <section id="notícias">
+            <!--Dá pra colocar qualquer grouping tag dentro de qualquer grouping tag. Por exemplo, section dentro de article-->
+            <article>
+                <h2>Leituras complementares</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi suscipit nemo voluptatum nulla officia possimus inventore, labore beatae iure necessitatibus molestiae cumque fugiat esse, ipsum voluptatem quos est eum aspernatur?</p>
+                <aside>
+                    <p>Artigo escrito por fulano de tal</p>
+                    <!--Conteúdo periférico ao artigo-->
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo curso em vídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        /*falamos pro código não mostrar o texto do parágrfo dentro da div através do conceito de child.*/
+        div > p {
+            display: none;
+        }
+
+        /*a div vai assumir uma nova característica quando eu passar o mouse em cima dela*/
+        div:hover {
+            color: red;
+        }
+
+        /* o parágrafo dentro da div vai assumir uma nova característica quando eu passar o mouse sobre a div*/
+        div:hover > p {
+            display: block;
+            color: aliceblue;
+            background-color: red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+
+    <!--Criamos uma div. Dentro dela tem um texto normal e um texto que está específicamente dentro de um parágrfo-->
+    <div> 
+        Passe o mouse aqui 
+    <p>TEXTO ESCONDIDO</p>
+    </div>
+</body>
+</html>
