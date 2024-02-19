@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+* { /*vale para todos os elementos*/
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100%; /*ou 100vh. pra que?*/
+    background-color: rgb(246, 234, 219);
+}
+
+header {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+header > h1 {
+    padding-top: 50px;
+
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh; /*10% da altura da tela. se a tela diminuir, o espaço de padding também diminui*/
+    padding-bottom: 10vh;
+    padding-left: 30px; /*pra não ficar grudado no lado esquerdo*/
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(195, 136, 250);
+}
+
+section.imagem > p {
+    background-color: blueviolet;
+    width: 400px;
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
