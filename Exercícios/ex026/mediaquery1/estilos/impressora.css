@@ -1,0 +1,20 @@
+@charset "UTF-8"
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+menu {
+    display: none; /* esconder o menu */
+}
+article {
+    width: 100%; /* o artigo vai ocupar 100% da largura, mas respeitando a margem e o padding de 10px */
+}
+article::after {
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
