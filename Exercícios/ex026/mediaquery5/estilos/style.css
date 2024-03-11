@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    background-color: rgb(255, 231, 235);
+}
+header {
+    background-color: rgb(218, 242, 255);
+}
+header > h1 {
+    padding: 10px;
+    text-align: center;
+    color: rgb(94, 95, 207);
+    text-shadow: 2px 2px 1px rgb(212, 176, 255);
+}
+i#burguer {
+    background-color: rgb(42, 42, 132);
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    font-style: normal;
+    /* anotar */
+    cursor: pointer;
+}
+i#burguer:hover {
+    background-color: white;
+    color: rgb(155, 93, 255);
+}
+menu > ul {
+    list-style-type: none;
+}
+menu > ul > li > a {
+    /* anotar */
+    display: none;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(42, 42, 132);
+    color: aliceblue;
+    border-top: 1px solid aliceblue;
+}
+menu > ul > li > a:hover {
+    background-color: rgb(155, 93, 255);
+}
+main {
+    width: 90vw;
+    background-color: beige;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+article > h2 {
+    padding-bottom: 15px;
+}
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 10px;
+}
+article {
+    
+}
