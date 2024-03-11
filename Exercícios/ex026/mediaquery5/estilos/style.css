@@ -35,9 +35,12 @@ i#burguer:hover {
 menu > ul {
     list-style-type: none;
 }
+menu {
+    display: none; 
+    
+}
 menu > ul > li > a {
-    /* anotar */
-    display: none;
+    display: block;
     padding: 10px;
     text-decoration: none;
     text-align: center;
@@ -63,7 +66,4 @@ article > p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 10px;
-}
-article {
-    
 }

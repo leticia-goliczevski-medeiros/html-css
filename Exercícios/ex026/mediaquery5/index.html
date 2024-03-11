@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <!-- serve para puxar o ícone que será usado no menu -->
-    <link rel="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/outrasmidias.css">
 </head>
-<body>
+<!-- quando o menu é aberto e ecolhido, e depois aumenta o tamanho da tela o menu some. é preciso usar javascript pra monitorar o tamanho da tela -->
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <!-- ícone do menu 
         onlick é uma propriedade de javascript e clickMenu é a função que vc criou que ele vai executar
         -->
-        <i id="burguer" class="material-icons" onclick="clickMenu()" >MENU</i>
+        <i id="burguer" onclick="clickMenu()" >MENU</i>
         <menu id="imenu">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -34,12 +34,19 @@
         </article>
     </main>
     <script>
-        /* se o menu está aparecendo, na função clicar esconder ele. Caso contrário, mostrar ele */
+        /* se o menu está aparecendo, usando a função clicar esconder ele. Caso contrário, mostrar ele */
         function clickMenu() {
             if (imenu.style.display == 'block') {
                 imenu.style.display = 'none'
             } else {
                 imenu.style.display = 'block'
+            }
+        }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                imenu.style.display = 'block'
+            } else {
+                imenu.style.display = 'none'
             }
         }
     </script>
